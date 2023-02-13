@@ -25,10 +25,10 @@ class Person
   
     attr_reader :hygiene
   
-    def hygiene=(value)
-      if value > 10
+    def hygiene=(degree_of_hygiene)
+      if degree_of_hygiene > 10
         @hygiene = 10
-      elsif value < 0
+      elsif degree_of_hygiene < 0
         @hygiene = 0
       else
         @hygiene = value
