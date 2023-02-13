@@ -13,10 +13,10 @@ class Person
   
     attr_reader :happiness
   
-    def happiness=(value)
-      if value > 10
+    def happiness=(degree_of_happiness)
+      if degree_of_happiness > 10
         @happiness = 10
-      elsif value < 0
+      elsif degree_of_happiness < 0
         @happiness = 0
       else
         @happiness = value
